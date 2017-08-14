@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <article><ng-content></ng-content></article>
   `,
-  styles: [`{
-    article {
-      border: 1px black;
-    }
-  }`]
+  styles: []
 })
 export class OtroComponent implements OnInit {
 
