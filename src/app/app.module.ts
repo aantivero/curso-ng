@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { MicomponentComponent } from './micomponent/micomponent.component';
 import { OtroComponent } from './micomponent/otro.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { PropertyBindingComponent } from './databinding/property-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MicomponentComponent,
     OtroComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule
