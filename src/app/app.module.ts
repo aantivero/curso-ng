@@ -6,6 +6,7 @@ import { MicomponentComponent } from './micomponent/micomponent.component';
 import { OtroComponent } from './micomponent/otro.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertyBindingComponent } from './databinding/property-binding.component';
+import { EventBindingComponent } from './databinding/event-binding.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PropertyBindingComponent } from './databinding/property-binding.compone
     MicomponentComponent,
     OtroComponent,
     DatabindingComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule
