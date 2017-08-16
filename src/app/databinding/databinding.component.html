@@ -1,3 +1,9 @@
+<h1>String Interpolation</h1>
 <p>
-  databinding works!
+  {{aplicacion}}
 </p>
+
+<h1>Property Binding</h1>
+<input type="text" [value]=valorInicial>
+<p [ngClass]="{bordeRojo: onTest(), bold: true}">Esto es un parrafo</p>
+<p [ngStyle]="{color: 'blue'}">Este es otro parrafo</p>

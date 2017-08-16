@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabindingComponent implements OnInit {
 
+  aplicacion: string = 'Mi aplicacion';
+  valorInicial: string = 'Mi valor inicial';
+
   constructor() { }
+
+  onTest(): boolean {
+    return true;
+  }
 
   ngOnInit() {
   }
