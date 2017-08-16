@@ -1,15 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-event-binding',
   template: `
-    <button (click)="onClicked()">OK</button>
+    <button (click)="onClicked($event)">OK</button>
+    <button (click)="presioname($event)">Presioname</button>
   `,
   styles: []
 })
 export class EventBindingComponent {
 
+  @Output() clicked = new EventEmitter<string>();
+
+  @Output() presionado = new EventEmitter<string>();
+
   onClicked() {
-    alert('boton presionado');
+    this.clicked.emit('FUNCIONA');
+  }
+
+  presioname() {
+    this.presionado.emit('alguien presiono el boton');
   }
 }

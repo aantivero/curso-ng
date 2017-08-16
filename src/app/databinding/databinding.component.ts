@@ -19,4 +19,13 @@ export class DatabindingComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClicked(value: string) {
+    alert(value);
+  }
+
+  algodeafuera(valor: string) {
+    console.log(valor);
+    alert(valor);
+  }
+
 }
