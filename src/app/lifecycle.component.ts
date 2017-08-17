@@ -6,7 +6,8 @@ import { Component,
   AfterContentChecked,
   AfterViewInit,
   AfterViewChecked,
-  OnDestroy } from '@angular/core';
+  OnDestroy, ContentChild
+} from '@angular/core';
 
 @Component({
   selector: 'app-lifecycle',
@@ -19,6 +20,9 @@ export class LifecycleComponent implements OnChanges, OnInit,
   DoCheck, AfterContentInit, AfterContentChecked, 
   AfterViewInit, AfterViewChecked, OnDestroy {
 
+  @ContentChild('contenido')  
+  contenido: HTMLElement;
+
   constructor() { }
 
   ngOnChanges() {
@@ -26,7 +30,8 @@ export class LifecycleComponent implements OnChanges, OnInit,
   }
 
   ngOnInit() {
-    this.log('ngOnInit')
+    this.log('ngOnInit');
+    console.log(this.contenido);
   }
 
   ngDoCheck() {

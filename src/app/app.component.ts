@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
   <h1>Data Binding</h1>
   <app-lifecycle *ngIf="!delete">
-    <p>{{test}}</p>
+    <p #contenido>{{test}}</p>
   </app-lifecycle>
   <button (click)="delete = true">Eliminar</button>
   `,
