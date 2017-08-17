@@ -9,6 +9,7 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertyBindingComponent } from './databinding/property-binding.component';
 import { EventBindingComponent } from './databinding/event-binding.component';
 import { LifecycleComponent } from './lifecycle.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LifecycleComponent } from './lifecycle.component';
     DatabindingComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
