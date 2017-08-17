@@ -13,3 +13,12 @@
 
 <h1>Event Binding</h1>
 <app-event-binding (clicked)="onClicked($event)" (presionado)="algodeafuera($event)"></app-event-binding>
+
+<h1>Double Data</h1>
+<div>
+  <h3>Persona</h3>
+  {{persona.nombre}} : {{persona.edad}}
+</div>
+
+<input [(ngModel)]="persona.nombre" required>
+<input [(ngModel)]="persona.edad" required>

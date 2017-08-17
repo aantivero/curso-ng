@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-databinding',
@@ -9,6 +10,12 @@ export class DatabindingComponent implements OnInit {
 
   aplicacion: string = 'Mi aplicacion';
   valorInicial: string = 'Mi valor inicial';
+  name = 'ok';
+
+  persona = {
+    nombre: 'Ale',
+    edad: 38
+  };
 
   constructor() { }
 
