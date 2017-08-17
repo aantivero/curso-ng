@@ -11,9 +11,7 @@ import { Component,
 @Component({
   selector: 'app-lifecycle',
   template: `
-    <p>
-      lifecycle Works!
-    </p>
+    <ng-content></ng-content>
   `,
   styles: []
 })

@@ -4,9 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   <h1>Data Binding</h1>
-  <app-lifecycle *ngIf="!delete"></app-lifecycle>
+  <app-lifecycle *ngIf="!delete">
+    <p>{{test}}</p>
+  </app-lifecycle>
   <button (click)="delete = true">Eliminar</button>
-  <app-databinding></app-databinding>
   `,
   styles: [
     `h1 {
@@ -16,4 +17,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  test: string = 'Esto es un ejemplo';
 }
