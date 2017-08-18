@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  title = 'app';
-  test: string = 'Esto es un ejemplo';
-  vinculante: number = 10;
+  app = {
+    lista: 'Listado'
+  };
+
+  productos: Array<string> = ['producto1', 'producto2', 'producto3'];
 }
