@@ -12,6 +12,7 @@ import { LifecycleComponent } from './lifecycle.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DirectivasComponent } from './directivas/directivas.component';
+import { ResaltadoDirective } from './directivas/resaltado.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DirectivasComponent } from './directivas/directivas.component';
     LifecycleComponent,
     NavbarComponent,
     FooterComponent,
-    DirectivasComponent
+    DirectivasComponent,
+    ResaltadoDirective
   ],
   imports: [
     BrowserModule,
