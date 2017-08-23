@@ -11,6 +11,7 @@ import { EventBindingComponent } from './databinding/event-binding.component';
 import { LifecycleComponent } from './lifecycle.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { DirectivasComponent } from './directivas/directivas.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     EventBindingComponent,
     LifecycleComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    DirectivasComponent
   ],
   imports: [
     BrowserModule,
