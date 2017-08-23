@@ -14,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { ResaltadoDirective } from './directivas/resaltado.directive';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+// tslint:disable-next-line:import-spacing
+import {MyMaterialModuleModule} from './MyMaterialModuleModule';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -26,13 +29,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     LifecycleComponent,
     NavbarComponent,
     FooterComponent,
-    DirectivasComponent,
-    ResaltadoDirective
+    DirectivasComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MyMaterialModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
