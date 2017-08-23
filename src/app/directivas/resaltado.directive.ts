@@ -7,16 +7,12 @@ import { ElementRef, Renderer, Input } from '@angular/core';
 export class ResaltadoDirective {
 
   @Input() defaultColor = 'white';
-  @Input('highlight') highlightColor = 'green';
+  //@Input('highlight') highlightColor = 'green';
 
     private backgroundColor: string;
     constructor(private elementRef: ElementRef, private renderer: Renderer) {
         this.elementRef.nativeElement.style.backgroundColor = 'green';
         this.renderer.setElementStyle(this.elementRef.nativeElement, 'background-color', 'green');
-    }
-
-    ngOnInit() {
-        this.backgroundColor = this.defaultColor;
     }
 
 }
